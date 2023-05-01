@@ -19,13 +19,13 @@ from django.urls import path, include
 from catalog.views import contacts, home, index, getdata
 from django.urls import path
 
-from dz.views import ok
+# from dz.views import ok
 
 urlpatterns = [
-    # path('index/', index, name='index'),
     path('admin/', admin.site.urls),
     path('', include('catalog.urls', namespace='catalog'))
     ]
+    # path('index/', index, name='index'),
     # path('ok/', ok, name='ok')
     # path('contacts/', contacts, name='contacts'),
     # path('home/', home, name='home'),
