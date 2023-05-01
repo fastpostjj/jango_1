@@ -1,2 +1,5 @@
 task.txt
 env/
+dz/
+catalog/__pycache__/
+.idea/
