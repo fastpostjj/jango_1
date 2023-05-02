@@ -8,5 +8,5 @@ urlpatterns = [
     path('index/', index, name='index'),
     path('contacts/', contacts, name='contacts'),
     path('home/', home, name='home'),
-    path('contacts/getdata/', getdata, name='getdata'),
+    path('getdata/', getdata, name='getdata'),
     ]
