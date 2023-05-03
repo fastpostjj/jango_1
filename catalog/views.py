@@ -30,5 +30,5 @@ def getdata(request):
     name = request.POST.get('name', '')
     phone = request.POST.get('phone', '')
     message = request.POST.get('message', '')
-    print(f"'name': {name}, 'phone': {phone}, 'message': {message}")
-    return HttpResponse(f"<h2>'name': {name}, 'phone': {phone}, 'message': {message}</h2>")
+    print(f"name: {name}, phone: {phone}, message: {message}")
+    return render(request, 'getdata.html', {'name': name, 'phone': phone, 'message': message})
